@@ -1,0 +1,60 @@
+body{
+	padding-top: 70px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navbar-inverse{
+	background: #8a0707;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+}
+
+.navbar-inverse .navbar-brand{
+	color: white;
+}
+
+.jumbotron{
+	background-color: #8a0707;
+	color: white;
+}
+
+.search{
+	padding-top: 15px;
+}
+
+h2{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.image1{
+	background-image: url(https://source.unsplash.com/991xsTQ7uEY);
+}
+
+.image {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image2{
+	background-image: url(https://source.unsplash.com/33FlT2A83H4);
+}
+
+.mid{
+	text-align: center;
+}
+
+.thumbnail{
+	background-color: #8a0707;
+	color: white;
+}
+
+table{
+	
+}
+

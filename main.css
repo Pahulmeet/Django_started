@@ -1,0 +1,31 @@
+body{
+	padding-top: 70px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navbar-inverse{
+	background: #8a0707;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+}
+
+.navbar-inverse .navbar-brand{
+	color: white;
+}
+
+.jumbotron{
+	background-color: #8a0707;
+	color: white;
+}
+
+.search{
+	padding-top: 15px;
+}
+
+h2{
+	font-size: 40px;
+	font-weight: bold;
+}

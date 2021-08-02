@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up Hospital</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'blood/signh.css '%}">
+</head>
+<body>
+	{% block body %}
+	<div class="container">
+	<div class="row">
+	<div class="col-xs-6 col-md-offset-3">
+		<form action="" method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+		<h1>Blood Book</h1>
+		<h3>Hospital Sign Up</h3>
+			<div class="form-group">
+   				 <label>Hospital Name</label> 			{{form.username}}
+  			</div>
+ 			<div class="form-group">
+   				 <label>Email address</label> 			{{form.email}}
+  			</div>
+ 			 <div class="form-group">
+  			  	<label>Password</label>					{{form.password}}
+  			</div>
+  			<!--<div class="form-group">
+  			  	<label>Re-type Password</label>{{ form.repassword }}
+  			</div> -->
+  			<div class="form-group">
+   				 <label>City</label>					{{form.city}}
+  			</div>
+  			<div class="form-group">
+   				 <label>Pin Code</label>				{{form.pin_code}}
+  			</div>
+  			<div class="form-group">
+   				 <label>State</label>					{{form.state}}
+  			</div>
+  			<div class="form-group">
+   				 <label>Contact Number 1</label>		{{form.contact1}}
+  			</div>
+  			<div class="form-group">
+				<label>Contact Number 2</label>			{{form.contact2}}
+  			</div>
+			<div class="sub">
+				<button type="submit" class="btn btn-default">Sign Up
+			</button>
+			</div>
+		</form>
+		</div>
+		</div>
+	</div>
+{% endblock %}
+</body>
+</html>

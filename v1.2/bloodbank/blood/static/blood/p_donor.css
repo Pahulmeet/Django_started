@@ -1,0 +1,55 @@
+body{
+	padding-top: 70px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: white;
+}
+
+.navbar-inverse{
+	background: #8a0707;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+}
+
+.navbar-inverse .navbar-brand{
+	color: white;
+}
+
+
+
+.pp{
+	background-color: #8a0707;
+	color: white;
+	height: 300px;
+	padding-left: 3%;
+	padding-right: 3%;
+
+}
+
+#profile_pic{
+	height: 200px;
+}
+
+.name{
+	color: white;
+}
+
+.pi{
+	height: 200px;
+	color: #8a0707;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.mid{
+	text-align: center;
+	color: white;
+	background-color: #8a0707;
+}
+
+.btn{
+	margin-top: 15px;
+	color: #8a0707;
+}

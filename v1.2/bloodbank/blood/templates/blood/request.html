@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Request Blood</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'blood/request.css '%}">
+</head>
+<body>
+{% block body %}
+	<div class="container">
+	<div class="row">
+	<div class="col-xs-6 col-md-offset-3">
+		<form action="" method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+		<h1>Blood Book</h1>
+		<h3>Request Blood</h3>
+			<div class="form-group">
+   				 <label >Name                    </label>               {{form.name}}
+  			</div>
+  			<div class="form-group">
+   				 <label >City                    </label>               {{form.city}}
+  			</div>
+  			<div class="form-group">
+   				 <label >Pin Code                </label>               {{form.pin_code}}
+  			</div>
+
+			<!--
+			<div class="form-group">
+   				 <label>State</label>
+   				 <input type="text" class="form-control" placeholder="State">
+  			</div>
+  			-->
+
+  			<div class="form-group">
+   				 <label >Contact Number 1        </label>               {{form.contact1}}
+  			</div>
+  			<div class="form-group">
+   				 <label >Contact Number 2        </label>               {{form.contact2}}
+  			</div>
+        <div class="form-group">
+           <label >Date</label>											{{form.date}}
+        </div>
+			<div class="form-group">
+           <label >Blood Group                   </label>               {{form.blood_group}}
+        </div>
+			<!--
+        <div class="form-group">
+           <label>Blood Group</label>
+           <div class="rad">
+            <label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="{{ field.blood_group }}">A+
+            </label>
+            <label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="{{ field.blood_group }}">B+
+            </label>
+            <label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="{{ field.blood_group }}">AB+
+            </label>
+            <label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="{{ field.blood_group }}">O+
+            </label>
+            <label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="{{ field.blood_group }}">A-<
+            </label>
+            <label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="{{ field.blood_group }}">B-
+            </label>
+            <label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio7" value="{{ field.blood_group }}">AB-
+            </label>
+            <label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio8" value="{{ field.blood_group }}">O-
+            </label>
+      </div>
+      </div>-->
+			<div class="sub">
+				<button type="submit" class="btn btn-default">Post
+			</button>
+			</div>
+		</form>
+		</div>
+		</div>
+	</div>
+{% endblock %}
+</body>
